@@ -15,17 +15,12 @@ public class Properties_Utils {
 		InputStream input = null;
 		
 		try {
-//			String workingDir = System.getProperty("user.dir");
-//			String path = workingDir+"\\src\\config\\grid.properties";
 			input = new FileInputStream(property_path);
 	 
 			// load a properties file
 			prop.load(input);
 	 
 			// get the property value and print it out
-//			System.out.println(prop.getProperty("hub"));
-//			System.out.println(prop.getProperty("node1"));
-//			System.out.println(prop.getProperty("node2"));
 			prop_value = prop.getProperty(property);
 	 
 		} catch (IOException ex) {

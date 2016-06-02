@@ -284,12 +284,6 @@ public class Base_Driver {
 	//mvn -X clean install exec:java -Dexec.mainClass="com.testing.tests.SeleniumX.runManager.Base_Driver" -Dexec.classpathScope=test -e
 	public static void main(String[] args) {
 		
-//	public static void runDriver() {
-		// TODO Auto-generated method stub
-		System.out.println("In base driver...");
-		
-//		String[] tests = {};
-		
 		//ANUKUL
 		String workingDir = System.getProperty("user.dir");
 		String path = workingDir+"\\src\\main\\java\\com\\testing\\SeleniumX\\config\\base_driver_config.properties";
@@ -322,16 +316,16 @@ public class Base_Driver {
 //		suite_script_hash.put("SuiteD", test1);
 //		createTestNGXML(suite_script_hash);
 		
-		System.out.println("execute tests : " + tests);
+//		System.out.println("execute tests : " + tests);
 		
 		//ANUKUL
 		TestNG myTestNG = executeSuites(tests);
-		System.out.println("TestNG suite is : " + myTestNG);
+//		System.out.println("TestNG suite is : " + myTestNG);
 		List<Class> listenerClass = new ArrayList<Class>();
 		listenerClass.add(com.testing.SeleniumX.utility.CustomReportListener.class);
 		myTestNG.setListenerClasses(listenerClass);
 		myTestNG.run();
-		System.out.println("test run complete..");
+//		System.out.println("test run complete..");
 		//ANUKUL
 		
 //		sendEmail();

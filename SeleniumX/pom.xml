@@ -30,7 +30,10 @@
 	       <artifactId>exec-maven-plugin</artifactId>  
 	       <version>1.5.0</version>  
 	       <configuration> 
-              <mainClass>com.testing.SeleniumX.runManager.Base_Driver</mainClass>
+              <mainClass>com.testing.SeleniumX.runManager.Batch_Driver</mainClass>
+              <arguments>
+              		<argument>../SeleniumX/src/main/java/com/testing/SeleniumX/batchConfig/testng1.xml</argument>
+              </arguments>
               <!-- Illegal Thread Exception Error -  http://stackoverflow.com/questions/13471519/running-daemon-with-exec-maven-plugin -->
               <cleanupDaemonThreads>false</cleanupDaemonThreads>  
 	       </configuration>

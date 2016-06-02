@@ -5,7 +5,7 @@
     <parameter name="browser" value="chrome" />    
     <classes>
       <class name="testScripts.suiteC.Google_Search"/>
-      <class name="testScripts.suiteD.EWindow_Shopping"/>
+      <class name="testScripts.suiteD.Google_Search"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

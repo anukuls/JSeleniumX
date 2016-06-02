@@ -129,11 +129,13 @@ public class Batch_Driver {
 		myTestNGSuites.run();
 	}
 	
-	public static void main(String suite_path) {
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String suite_path = args[0];
+		
 		executeTestNGSuite(suite_path);   
 		String workingDir = System.getProperty("user.dir");
-		String path = workingDir+"\\src\\config\\batch_driver_config.properties";
+		String path = workingDir+"\\src\\main\\java\\com\\testing\\SeleniumX\\config\\batch_driver_config.properties";
 		String rerun = Properties_Utils.get_property(path,"rerun");
 		Integer rerun_count = Integer.valueOf(rerun);
 		ArrayList<String> failures = getFailures();
